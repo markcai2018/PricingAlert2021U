@@ -9,7 +9,7 @@ import os
 
 
 app = Flask(__name__)
-app.config.from_object('src.config')
+app.config.from_object('config')
 #Below works if we have a '.env' in the root project folder
 #app.config.update(
 #    ADMIN=os.environ.get('ADMIN')
