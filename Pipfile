@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+uWSGI = "*"
 pymongo = "*"
 beautifulsoup4 = "*"
 requests = "*"
