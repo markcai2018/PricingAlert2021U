@@ -3,9 +3,9 @@ import os
 
 class Database(object):
     
-    #DB_USER = os.environ.get('DB_USER')
-    URI = "mongodb+srv://root2511:mCai251101@cluster0-bpyjs.mongodb.net/student?retryWrites=true&w=majority"
-    #URI = "mongodb+srv://" + DB_USER + "@cluster0-bpyjs.mongodb.net/student?retryWrites=true&w=majority"
+    DB_USER = os.environ.get('DB_USER')
+    
+    URI = "mongodb+srv://" + DB_USER + "@cluster0-bpyjs.mongodb.net/student?retryWrites=true&w=majority"
     print(URI)
     DATABASE = None
 
