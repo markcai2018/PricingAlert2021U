@@ -72,13 +72,13 @@ class Alert(object):
         print(AlertConstants.API_KEY)
         print(AlertConstants.URL)
 
-        #return requests.post(
-        #    AlertConstants.URL,
-        #    auth=("api", AlertConstants.API_KEY),
-        #    data={"from": "Mailgun Sandbox <postmaster@sandbox2eefabb923604faea7686b1eac2f5b5e.mailgun.org>",
-        #          "to": self.user_email,
-        #         "subject": "Price limit reached for {}".format(self.item.name),
-        #         "text": "We've found a deal! ({}).".format(self.item.url)})
+        return requests.post(
+            AlertConstants.URL,
+            auth=("api", AlertConstants.API_KEY),
+            data={"from": "Mailgun Sandbox <postmaster@sandbox2eefabb923604faea7686b1eac2f5b5e.mailgun.org>",
+                  "to": self.user_email,
+                 "subject": "Price limit reached for {}".format(self.item.name),
+                 "text": "We've found a deal! ({}).".format(self.item.url)})
 
 
     @classmethod
